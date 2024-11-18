@@ -5,5 +5,6 @@ import org.springframework.hateoas.Link;
 import java.util.List;
 
 public interface MountLinksController<T> {
-  List<Link> getAllLinks(T dto);
+  List<Link> getLinksForDto(T dto);
+  List<Link> getAllLinks();
 }
